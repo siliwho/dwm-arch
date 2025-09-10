@@ -1,0 +1,7 @@
+#!/bin/sh
+
+#xrandr --dpi 120 &
+nitrogen --restore &
+picom &
+./bar.sh
+export QT_QPA_PLATFORMTHEME=qt5ct
