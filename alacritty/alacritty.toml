@@ -1,0 +1,89 @@
+[window]
+dimensions = { columns = 82, lines = 24 }
+padding = { x = 3, y = 0 }
+decorations = "Full"
+startup_mode = "Windowed"
+opacity = 0.9
+title = "Alacritty"
+dynamic_padding = false
+
+[font]
+size = 10.0
+
+[font.normal]
+family = "JetBrainsMono NFM"
+style = "Bold"
+
+[font.bold]
+family = "JetBrainsMono NFM"
+style = "Bold"
+
+[font.italic]
+family = "JetBrainsMono NFM"
+style = "Italic"
+
+[font.bold_italic]
+family = "JetBrainsMono NFM"
+style = "Bold Italic"
+
+[cursor]
+style = { shape = "Block", blinking = "Off" }
+unfocused_hollow = true
+blink_interval = 0
+
+# [bell]
+# animation = "None"
+# duration = 0
+# color = "#ffb964"
+
+# [selection]
+# text = "#afb1db"
+# background = "#8656e3"
+
+[colors.primary]
+background = "#0E1113"
+foreground = "#afb1db"
+
+[colors.cursor]
+cursor = "#c0caf5"
+text = "#1a1b26"
+
+[colors.normal]
+black = "#353c52"
+red = "#e7034a"
+green = "#61b33e"
+yellow = "#ffb964"
+blue = "#5884d4"
+magenta = "#7a44e3"
+cyan = "#7df0f0"
+white = "#afb1db"
+
+[colors.bright]
+black = "#353c52"
+red = "#e71c5b"
+green = "#6fb352"
+yellow = "#ffb964"
+blue = "#5f90ea"
+magenta = "#8656e3"
+cyan = "#97f0f0"
+white = "#afb1db"
+
+[colors.footer_bar]
+background = "#353c52"
+foreground = "#afb1db"
+
+[colors.search.matches]
+foreground = "CellBackground"
+background = "CellForeground"
+
+[colors.search.focused_match]
+foreground = "CellBackground"
+background = "#ffb964"
+
+[colors.hints.start]
+foreground = "#0E1113"
+background = "#ffb964"
+
+[colors.hints.end]
+foreground = "#0E1113"
+background = "#ffb964"
