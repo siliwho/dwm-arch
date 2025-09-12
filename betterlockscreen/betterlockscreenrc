@@ -1,0 +1,63 @@
+# ~/.config/betterlockscreenrc (TokyoNight Theme)
+
+# Basic behavior
+display_on=0
+span_image=false
+lock_timeout=300
+fx_list=(dim blur dimblur)    # only keep nice looking effects
+dim_level=40
+blur_level=3
+pixel_scale=10,1000
+solid_color=1a1b26            # base background (TokyoNight dark)
+wallpaper_cmd="feh --bg-fill"
+quiet=false
+
+# Login box + shadow
+loginbox=1a1b2699
+loginshadow=00000000
+locktext="Type password to unlock.."
+#font="ArcadeClassic"
+font="JetBrainsMono Nerd Font"
+
+#lockargs+=("--time-font=ArcadeClassic")
+lockargs+=("--time-font=Electroharmonix")
+
+
+# Ring & indicator colors
+ringcolor=7aa2f7ff        # blue accent
+insidecolor=00000000
+separatorcolor=00000000
+ringvercolor=9ece6aff     # green when verifying
+insidevercolor=1a1b26ff
+ringwrongcolor=f7768eff   # red when wrong
+insidewrongcolor=1a1b26ff
+
+# Text colors
+timecolor=c0caf5ff
+time_format="%H:%M:%S"
+greetercolor=bb9af7ff
+layoutcolor=a9b1d6ff
+keyhlcolor=bb9af7ff
+bshlcolor=f7768eff
+
+# Status texts
+veriftext="Checking..."
+verifcolor=9ece6aff
+wrongtext="Wrong password!"
+wrongcolor=f7768eff
+modifcolor=bb9af7ff
+bgcolor=1a1b26ff
+
+# Custom lock arguments (tuned for aesthetics)
+#lockargs=()
+#lockargs+=("--ignore-empty-password")
+#lockargs+=("--font='JetBrainsMono Nerd Font'")
+#lockargs+=("--radius=180")
+#lockargs+=("--ring-width=15")
+#lockargs+=("--time-font='JetBrainsMono Nerd Font'")
+#lockargs+=("--date-font='JetBrainsMono Nerd Font'")
+#lockargs+=("--greeter-text='TokyoNight Lock 🔒'")
+#lockargs+=("--greeter-font='JetBrainsMono Nerd Font'")
+
+i3lockcolor_bin="i3lock"
+
