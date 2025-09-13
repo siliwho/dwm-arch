@@ -1,0 +1,32 @@
+# Ignore everything
+*
+*/
+
+# --- Keep these custom configs ---
+!/nvim/
+!/nvim/**
+!/dwm/
+!/dwm/**
+!/ranger/
+!/ranger/**
+!/rofi/
+!/rofi/**
+!/kitty/
+!/kitty/**
+!/Fonts/
+!/Fonts/**
+!/zen/
+!/zen/**
+!/alacritty/
+!/alacritty/**
+!/betterlockscreen/
+!/betterlockscreen/**
+
+# Optionally keep custom themes/scripts
+!*.sh
+!*.md
+
+!looks.png
+!.xinitrc
+!.xprofile
+!.gitignore
