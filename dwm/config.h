@@ -1,5 +1,6 @@
 /* See LICENSE file for copyright and license details. */
 
+#include "theme.h"
 #include <X11/XF86keysym.h>
 
 /* appearance */
@@ -25,13 +26,13 @@ static const char *fonts[] = {
 static const char dmenufont[] = "JetBrains Mono Nerd Font:size=7.5";
 
 /* appearance */
-static const char col_gray1[] = "#0E1113"; // background
-static const char col_gray2[] = "#353c52"; // inactive border
-static const char col_gray3[] = "#afb1db"; // foreground text
-static const char col_gray4[] = "#5884d4"; // selected text
-static const char col_cyan[] = "#0e1113";  // selected background
-static const char col_cyan1[] = "#5884d4"; // active border
-static const char col_d_nf[] = "#afb1db";  // dmenu foreground
+// static const char col_gray1[] = "#0E1113"; // background
+// static const char col_gray2[] = "#353c52"; // inactive border
+// static const char col_gray3[] = "#afb1db"; // foreground text
+// static const char col_gray4[] = "#5884d4"; // selected text
+// static const char col_cyan[] = "#0e1113";  // selected background
+// static const char col_cyan1[] = "#5884d4"; // active border
+// static const char col_d_nf[] = "#afb1db";  // dmenu foreground
 
 static const char *colors[][3] = {
     /*               fg         bg         border   */
@@ -91,6 +92,7 @@ static const char *dmenucmd[] = {
     "dmenu_run", "-m",     dmenumon, "-fn",    dmenufont, "-nb",     col_gray1,
     "-nf",       col_d_nf, "-sb",    col_cyan, "-sf",     col_gray4, NULL};
 static const char *termcmd[] = {"kitty", NULL};
+static const char *termcmd2[] = {"alacritty", NULL};
 static const char *roficmd[] = {
     "/home/siliwho/.config/rofi/launchers/type-3/launcher.sh", NULL};
 static const char *mutecmd[] = {"pactl", "set-sink-mute", "0", "toggle", NULL};
@@ -114,6 +116,7 @@ static const Key keys[] = {
     /* modifier                     key        function        argument */
     {MODKEY, XK_p, spawn, {.v = roficmd}},
     {MODKEY | ShiftMask, XK_Return, spawn, {.v = termcmd}},
+    {MODKEY | ShiftMask, XK_a, spawn, {.v = termcmd2}},
     {MODKEY, XK_Escape, spawn, {.v = screen_lockcmd}},
     {MODKEY, XK_e, spawn, {.v = powermenu}},
     {MODKEY, XK_b, togglebar, {0}},
