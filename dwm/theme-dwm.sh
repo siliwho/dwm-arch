@@ -75,10 +75,20 @@ apply_theme() {
     apply_xresources
 
     # wallpaper (nitrogen)
-    wp="$(get_next_wallpaper "$theme")"
-    if [[ -n "$wp" ]]; then
-        nitrogen --set-zoom-fill "$wp" --save
+    # wp="$(get_next_wallpaper "$theme")"
+    # if [[ -n "$wp" ]]; then
+    #     nitrogen --set-zoom-fill "$wp" --save
+    # fi
+        # wallpaper (explicit or auto)
+    if [[ -n "$2" && -f "$2" ]]; then
+        nitrogen --set-zoom-fill "$2" --save
+    else
+        wp="$(get_next_wallpaper "$theme")"
+        if [[ -n "$wp" ]]; then
+            nitrogen --set-zoom-fill "$wp" --save
+        fi
     fi
+
 
     # rebuild + restart dwm (sudo KEPT as requested)
     cd "$DWM_DIR" || exit 1
@@ -107,5 +117,5 @@ apply_theme() {
 # -------------------------------------------------
 # Entry point
 # -------------------------------------------------
-apply_theme "$1"
+apply_theme "$1" "$2"
 
