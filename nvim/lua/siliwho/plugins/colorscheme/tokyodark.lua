@@ -7,6 +7,6 @@ return {
 		vim.g.tokyodark_transparent_background = true
 		local transparent = true -- set to true if you would like to enable transparency
 
-		vim.cmd("colorscheme tokyodark")
+		-- vim.cmd("colorscheme tokyodark")
 	end,
 }
