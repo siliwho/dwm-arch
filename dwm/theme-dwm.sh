@@ -104,10 +104,10 @@ apply_theme() {
 
     case "$theme" in
       blackwhite)  NVIM_CS="cyberdream" ;;
-      gruvbox)     NVIM_CS="retro" ;;
+      gruvbox)     NVIM_CS="retrobox" ;;
       tokyo)       NVIM_CS="tokyodark" ;;
       everforest)  NVIM_CS="tokyonight" ;;
-      nord)        NVIM_CS="nord" ;;
+      nord)        NVIM_CS="tokyodark" ;;
       *)           NVIM_CS="tokyodark" ;;
     esac
 
